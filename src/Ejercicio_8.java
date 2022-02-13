@@ -33,6 +33,6 @@ public class Ejercicio_8 {
                 System.out.println("Dia No Laborable");
                 break;
         }
-        }while (dia!= "n");
+        }while (!dia.equalsIgnoreCase("n"));
     }
 }
