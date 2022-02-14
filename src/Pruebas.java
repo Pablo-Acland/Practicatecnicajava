@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class Pruebas {
     public static void main(String[] args) {
-        String a;
-        a= generarDNI();
+        String a,b;
+        a= comprobarColor("Rojo");
         System.out.println(a);
     }
 
@@ -18,6 +18,12 @@ public class Pruebas {
         dni2 = dni - dni2;
         dniFin = dni+"-"+letras[dni2];
         return dniFin;
+    }
+    public static String comprobarColor(String color){
+        if(color=="Blanco" || color=="Negro" || color=="Rojo" || color=="Azul" || color=="Gris"){
+            return color;
+        }
+        return "Blanco";
     }
 
 }
